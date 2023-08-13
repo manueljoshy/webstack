@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>Geolocation</title>
+    <meta charset="utf-8" />
+    <h1 style="text-align: center;
+               margin-left:35%;
+               width:30%;
+               border: 2px solid #0e0c0c;
+               border-radius: 50px;
+               background-color:rgb(108, 226, 237);">My Current Location</h1>
+	<script type='text/javascript'>
+    function GetMap() {
+        var map = new Microsoft.Maps.Map('#myMap', {
+            credentials: 'Aqq4LC_B7f2WzV8p7V6mZ4s5mu9Nf4rKgq0BybfFwytsADbYBgsDgjqLLklXvZs8'
+        });
+
+
+        var button = document.createElement('button');
+        button.innerHTML = 'Show Current Location';
+        button.id = 'showCurrentLocationButton';
+        button.style.marginLeft="46%";
+        button.onclick = function (){
+        //Request the user's location
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var loc = new Microsoft.Maps.Location(
+                position.coords.latitude,
+                position.coords.longitude);
+
+            //Add a pushpin at the user's location.
+            var pin = new Microsoft.Maps.Pushpin(loc);
+            map.entities.push(pin);
+
+            //Center the map on the user's location.
+            map.setView({ center: loc, zoom: 15 });
+        });
+    };
+    document.body.appendChild(button);
+}
+    </script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+
+</head>
+
+<body > 
+<style>
+    body {
+        background-image: url('brett-zeck-eyfMgGvo9PA-unsplash.jpg');
+        background-size: cover; /* Adjust the background size */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;  
+        width:500px;
+        background-color: white;
+        margin-top: 1px;
+    }
+
+</style>
+    <div id="myMap" style="margin-left:30%; border: 2px solid #0e0c0c;border-radius: 50px;width:40%;
+    height:400px;margin-top:3%;margin-bottom:7%;overflow:hidden"></div>
+    
+        <table>
+            <tr >
+                <th>different apis available</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.mapbox.com/">1. Mapbox</a></td>
+            </tr>
+            <tr>
+               <td> <a href="https://developers.google.com/maps">2. Google maps</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.apple.com/maps/">3. apple maps</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api">4. bing maps</a></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+
