@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cascade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <div class="containers">
+      <h1>Manuel Joshy </h1>
+      <ul>
+        <li><a href="info.html"><i class="fa-solid fa-house"></i> About</a></i></li>
+        <li><a href="gallery.html"><i class="fa-regular fa-image"></i> photo gallery</a></li>
+        <li><a href="skills.html"><i class="fa-solid fa-bars"></i> Skills</a></li>
+        <li><a href="contact.html"><i class="fa-sharp fa-solid fa-address-card"></i>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="frame" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form onsubmit="return false;">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button onclick="sendMessage()">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+ <script src="script.js"></script>
+</footer>
+</body>
+</html>
