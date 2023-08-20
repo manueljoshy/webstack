@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee id=1>
+     <personal_details>
+      <First_name>Jackson</First_name>
+      <Last_name>Joy</Last_name>
+      <dob>2002-11-05</dob>
+      <gender>Male</gender>
+     </personal_details>
+     <employee_details>
+      <Position>Sales manager</Position>
+      <salary>70000</salary>
+     </employee_details>
+     <contact_details>
+      <Email>jacksonjoy34556@gmail.com</Email>
+      <Phone_number>3636636350</Phone_number>
+     </contact_details>
+    </employee>
+    <employee id=2>
+     <personal_details>
+      <First_name >Rajisha</First_name>
+      <Last_name>Nair</Last_name>
+      <dob>2002-07-09</dob>
+      <gender>Femaleale</gender>
+     </personal_details>
+     <employee_details>
+      <Position>Marketing manager</Position>
+      <salary>80000</salary>
+     </employee_details>
+     <contact_details>
+      <Email>rajishanair765@gmail.com</Email>
+      <Phone_number>3667963635</Phone_number>
+     </contact_details>
+    </employee>
+    <employee id=3>
+     <personal_details>
+      <First_name>Rama</First_name>
+      <Last_name>Rajput</Last_name>
+      <dob>2001-01-12</dob>
+      <gender>Female</gender>
+     </personal_details>
+     <employee_details>
+      <Position>purchase manager</Position>
+      <salary>65000</salary>
+     </employee_details>
+     <contact_details>
+      <Email>ramarajput@gmail.com</Email>
+      <Phone_number>3636063635</Phone_number>
+     </contact_details>
+    </employee>
+    <employee id=4>
+     <personal_details>
+      <First_name>Rohan</First_name>
+      <Last_name>Kumar</Last_name>
+      <dob>2000-03-27</dob>
+      <gender>Male</gender>
+     </personal_details>
+     <employee_details>
+      <Position> HR manager</Position>
+      <salary>100000</salary>
+     </employee_details>
+     <contact_details>
+      <Email>rohankumar009@gmail.com</Email>
+      <Phone_number>4553663635</Phone_number>
+     </contact_details>
+
+    </employee>
+</employees>
