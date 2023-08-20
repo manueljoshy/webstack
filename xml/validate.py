@@ -1,4 +1,5 @@
 import xmlschema
+
 xml_file = "employee.xml"
 xsd_file = "employee_schema.xsd"
 
@@ -7,4 +8,10 @@ if validator.is_valid(xml_file):
     print("XML file is valid against the XSD schema.")
 else:
     print("XML file is not valid against the XSD schema.")
-    print(validator(xml_file))
+    validation_errors = validator.validate(xml_file)
+    for error in validation_errors:
+        print("Validation Error:")
+        print("  Message:", error)
+        print("  Line:", error.line)
+        print("  Column:", error.column)
+        print("=" * 30)
